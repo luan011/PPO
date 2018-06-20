@@ -1,55 +1,70 @@
-Construtor
-os construtores são os responsáveis por criar o objeto em memória ou instanciar a classe que foi definida
+# Construtor
+
+Os construtores sÃ£o os responsÃ¡veis por criar o objeto em memÃ³ria ou instanciar a classe que foi definida
  
 class test{
+
     public test() {
+    
         System.out.println(" Construtor");
+	
     }
+    
 }
-Instanciação
+
+# InstanciaÃ§Ã£o
  
-Instanciação é quando se faz uma copia de uma classe existente
+InstanciaÃ§Ã£o Ã© quando se faz uma copia de uma classe existente
  
 public class Instanciacao {
+
     private Menu menu= new Menu ();
+    
 }
-Palavra reservada new
+
+# Palavra reservada new
 Usa-se new para instanciar objetos
  
-Palavra reservada instanciof
-O operador instanceof serve para verificar se determinado objeto é uma instância de um determinado tipo classe ou interface.
+# Palavra reservada instanciof
+O operador instanceof serve para verificar se determinado objeto Ã© uma instÃ¢ncia de um determinado tipo classe ou interface.
  
-Encapsulamento
-É uma forma de reaproveitar código e também esconde-lo
+# Encapsulamento
+Ã‰ uma forma de reaproveitar cÃ³digo e tambÃ©m esconde-lo
  
-Palavra reservada this
+# Palavra reservada this
  
-É usado para fazer auto-referência ao próprio contexto em que se encontra e sempre será a própria classe ou o objeto já instanciado.
+Ã‰ usado para fazer auto-referÃªncia ao prÃ³prio contexto em que se encontra e sempre serÃ¡ a prÃ³pria classe ou o objeto jÃ¡ instanciado.
  
-Getters/Setters
-GET é quando você quer pegar um valor.
-SET é quando você deseja setar ou enviar algo, algum valor.
+# Getters/Setters
+GET Ã© quando vocÃª quer pegar um valor.
+
+SET Ã© quando vocÃª deseja setar ou enviar algo, algum valor.
  
  
-Palavra reservada public/private
+# Palavra reservada public/private
  
 Public todos tem acesso a classe
- No Private a única classe que tem acesso ao atributo é a própria classe que o define
+
+No Private a Ãºnica classe que tem acesso ao atributo Ã© a prÃ³pria classe que o define
+
 public class Test{
+
     public int Publico;
+    
     private int Privado;
+    
 }
  
-Assinatura de método
-A assinatura é o jeito de identificar um método de forma única.Em linguagens onde vários métodos podem ter o mesmo nome, você precisa ter uma outra forma de evitar a ambiguidade.
+# Assinatura de mÃ©todo
+A assinatura Ã© o jeito de identificar um mÃ©todo de forma Ãºnica.Em linguagens onde vÃ¡rios mÃ©todos podem ter o mesmo nome, vocÃª precisa ter uma outra forma de evitar a ambiguidade.
  
-Sobrecarga de método
+# Sobrecarga de mÃ©todo
  
-Sobrecarga de método permite a existência de vários métodos de mesmo nome, porém com assinaturas levemente diferentes ou seja variando no número , tipo de argumentos , no valor de retorno e até variáveis diferentes. 
+Sobrecarga de mÃ©todo permite a existÃªncia de vÃ¡rios mÃ©todos de mesmo nome, porÃ©m com assinaturas levemente diferentes ou seja variando no nÃºmero , tipo de argumentos , no valor de retorno e atÃ© variÃ¡veis diferentes. 
  
-Escopo de Classe
+# Escopo de Classe		
  
-Escopo é o nome que se dá aos limites de uma variável, em java uma variável só é valida dentro das chaves onde é declarada,se declara dentro do método só vale dentro do metodo, porem se declarada dentro da classe (como atributo) ela vale na classe inteira incluindo no método 
+Escopo Ã© o nome que se dÃ¡ aos limites de uma variÃ¡vel, em java uma variÃ¡vel sÃ³ Ã© valida dentro das chaves onde Ã© declarada,se declara dentro do mÃ©todo sÃ³ vale dentro do metodo, porem se declarada dentro da classe (como atributo) ela vale na classe inteira incluindo no mÃ©todo 
  
 public class Escopo{  
    
@@ -61,32 +76,27 @@ public class Escopo{
   }  
    
 }  
-Escopo de Objeto
+# Escopo de Objeto
  
-Escopo do objeto é onde ele está, dentro da classe, sendo um atributo, ou dentro de um método, sendo uma variável.
+Escopo do objeto Ã© onde ele estÃ¡, dentro da classe, sendo um atributo, ou dentro de um mÃ©todo, sendo uma variÃ¡vel.
  
 public static void main(String args[]){
+
 	Aluno aluno1;
-	aluno1= new Aluno(“Luan”, 19, ’M’);
+	aluno1= new Aluno(â€œLuanâ€, 19, â€™Mâ€™);
 }
  
  
  
-Relacionamento de dependência
+# Relacionamento de dependÃªncia
  
-Ocorre quando uma classe utiliza os serviços de outra classe
- Ocorre no método da classe
- Símbolo UML "- - - - - >".
+Ocorre quando uma classe utiliza os serviÃ§os de outra classe. Ocorre no mÃ©todo da classe. SÃ­mbolo UML "- - - - - >".
  
-Relacionamento de Agregação
+# Relacionamento de AgregaÃ§Ã£o
  
-É quando duas classes têm uma relação todo-parte, a parte consegue existir sem o todo
- Atributo da Classe
- Símbolo UML "-------<>"
+Ã‰ quando duas classes tÃªm uma relaÃ§Ã£o todo-parte, a parte consegue existir sem o todo. Atributo da Classe. SÃ­mbolo UML "-------<>"
  
-Relacionamento de Composição
+# Relacionamento de ComposiÃ§Ã£o
  
-É quando duas classes têm uma todo-parte, a parte não consegue existir sem o todo.
- Atributo da Classe
-Símbolo UML "-------<//>"
+Ã‰ quando duas classes tÃªm uma todo-parte, a parte nÃ£o consegue existir sem o todo.Atributo da Classe.SÃ­mbolo UML "-------<//>"
  
